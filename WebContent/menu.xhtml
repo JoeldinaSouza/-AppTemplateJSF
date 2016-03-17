@@ -5,7 +5,7 @@
 <h:head>
 	<link href="stylesheet.css" rel="stylesheet" type="text/css" />
 </h:head>
-	<title>Minha página1 </title>
+	<title>Menu</title>
 <h:body>
 	<div id="page">
 		<div id="header-container">
@@ -16,6 +16,11 @@
 			</div>
 		</div>
 		<div id="content-container">
+			<div id="menu">
+				<ui:insert name="menu">
+					<ui:include src="template/menu.xhtml" />
+				</ui:insert>
+			</div>
 			<div id="content">
 				<ui:insert name="content">
 					<ui:include src="template/content.xhtml" />
